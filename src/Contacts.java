@@ -23,7 +23,8 @@ public class Contacts {
         this.businessContacts = businessContacts;
     }
     public void display(){
-        System.out.println("Would you like to add a contact");
+        System.out.println("Would you like to add a contact? (1)");
+
     }
     @Override
     public String toString() {
