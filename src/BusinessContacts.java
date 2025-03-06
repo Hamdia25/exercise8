@@ -19,7 +19,7 @@ public class BusinessContacts extends Contact {
     @Override
     public void display() {
         super.display();
-        System.out.println(" Contact number: " + getPhoneNumber());
+        System.out.println("Contact number: " + getPhoneNumber());
     }
 
 }
