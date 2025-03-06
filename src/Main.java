@@ -14,9 +14,25 @@ public class Main {
    businessContacts3.display();
    Contacts contacts = new Contacts(contactList, businessContacts);
    contacts.display();
-   contacts.add()
+   try{
+        int userInput = Integer.parseInt(input.nextLine());
+        if(userInput == 1){
+            contacts.add();
         }
+        else{
+            System.exit(0);
         }
+        System.out.println("What contact name will you add?");
+        input.nextLine();
+       System.out.println("What email number will you add?");
+       input.nextLine();
+       System.out.println("What contact number will you add?");
+       input.nextLine();
+        contacts.add();
+       System.out.println(contacts);
+        }
+    catch(Exception InputArithmetic){
+        System.out.println("Please enter an integer");
+    }
+        }}
     
-
-
