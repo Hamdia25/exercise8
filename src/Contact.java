@@ -31,7 +31,7 @@ public class Contact {
         this.email = email;
     }
     public void display(){
-        System.out.print("Contact name: " + name + " Contact email: " + email);
+        System.out.print("Contact name:" + name + " " + "Contact email:" + " " + email);
         Contact contacts = new Contact(name, email);
     }
 
