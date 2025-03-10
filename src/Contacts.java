@@ -1,11 +1,14 @@
+import java.util.ArrayList;
+
 public class Contacts {
     private Contact contactList;
     private BusinessContacts businessContacts;
 
-    public Contacts(Contact contactList, BusinessContacts businessContacts) {
-        this.contactList = contactList;
-        this.businessContacts = businessContacts;
+    public Contacts(String name, String email, String phone) {
+        this.contactList = new Contact(name, email);
+        this.businessContacts = new BusinessContacts( name,  email,  phone);
     }
+
 
     public Contact getContactList() {
         return contactList;
@@ -23,7 +26,9 @@ public class Contacts {
         this.businessContacts = businessContacts;
     }
     public void display(){
-        System.out.println("Would you like to add a contact? (1)");
+
+
+
 
     }
     @Override
@@ -34,8 +39,9 @@ public class Contacts {
                 '}';
     }
 
-    public void add() {
-        Contact.add();
-    }
+    public void add(Contacts contacts) {
+        contacts.add(contacts);
+        }
+
 }
 
