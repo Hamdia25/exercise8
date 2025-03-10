@@ -15,11 +15,18 @@ public class BusinessContacts extends Contact {
         this.phoneNumber = phoneNumber;
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + "BusinessContacts{" +
+                "phoneNumber='" + phoneNumber + '\'' +
+                '}';
+    }
 
     @Override
     public void display() {
         super.display();
-        System.out.println("Contact number: " + getPhoneNumber());
+        System.out.println("Contact number: " + phoneNumber);
     }
+
 
 }
