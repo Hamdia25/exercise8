@@ -8,9 +8,6 @@ public class Contact {
         this.email = email;
     }
 
-    public static void add() {
-    }
-
 
     public String getName() {
         return name;
@@ -30,11 +27,20 @@ public class Contact {
     public void setEmail(String email) {
         this.email = email;
     }
-    public void display(){
-        System.out.print("Contact name:" + name + " " + "Contact email:" + " " + email);
+
+    public void display() {
+        System.out.print("Contact name:" + name + " " + "Contact email:" + " " + email + " ");
         Contact contacts = new Contact(name, email);
     }
 
+    @Override
+    public String toString() {
+        return "Contact{" +
+                "name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
 
-
+    public void add() {
+    }
 }
